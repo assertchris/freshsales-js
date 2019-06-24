@@ -1,5 +1,5 @@
 {
-    "name": "freshsales-js",
+    "name": "@assertchris/freshsales",
     "description": "Freshsales JS client",
     "version": "0.1.0",
     "main": "build/bundle.esm.js",
