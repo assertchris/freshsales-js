@@ -1,0 +1,35 @@
+{
+    "name": "freshsales-js",
+    "description": "FreshSales API client",
+    "version": "0.1.0",
+    "main": "build/bundle.esm.js",
+    "scripts": {
+        "clean": "rimraf build/*",
+        "build": "babel source --out-dir build --ignore node_modules",
+        "test": "npm run clean && npm run build && mocha --timeout 5000 tests"
+    },
+    "dependencies": {
+        "dotenv": "^8.0.0",
+        "isomorphic-fetch": "^2.2.1",
+        "regenerator-runtime": "^0.13.2"
+    },
+    "devDependencies": {
+        "@assertchris/attempt-promise": "^1.0.0",
+        "@babel/cli": "^7.4.4",
+        "@babel/core": "^7.4.5",
+        "@babel/plugin-proposal-class-properties": "^7.4.4",
+        "@babel/plugin-transform-modules-commonjs": "^7.4.4",
+        "@babel/preset-env": "^7.4.5",
+        "chai": "^4.2.0",
+        "husky": "^2.4.1",
+        "mocha": "^6.1.4",
+        "rimraf": "^2.6.3"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run test"
+        }
+    },
+    "license": "MIT",
+    "author": "Christopher Pitt <cgpitt@gmail.com>"
+}
