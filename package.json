@@ -1,6 +1,6 @@
 {
     "name": "freshsales-js",
-    "description": "FreshSales API client",
+    "description": "Freshsales JS client",
     "version": "0.1.0",
     "main": "build/bundle.esm.js",
     "scripts": {
