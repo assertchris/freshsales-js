@@ -1,8 +1,8 @@
 {
     "name": "@assertchris/freshsales",
     "description": "Freshsales JS client",
-    "version": "0.1.0",
-    "main": "build/bundle.esm.js",
+    "version": "0.1.1",
+    "main": "build/index.js",
     "scripts": {
         "clean": "rimraf build/*",
         "build": "babel source --out-dir build --ignore node_modules",
